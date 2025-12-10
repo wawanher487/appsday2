@@ -1,0 +1,5 @@
+cara dinamic routing kita cukup buat file dan gunakan [nama].tsx
+
+jika [...nama].tsx maka akan mengambil semua segmennya berdasarkan / 
+
+jika [[...nama]].tsx maka slug nya opsional 
