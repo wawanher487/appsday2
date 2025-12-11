@@ -3,3 +3,39 @@ cara dinamic routing kita cukup buat file dan gunakan [nama].tsx
 jika [...nama].tsx maka akan mengambil semua segmennya berdasarkan / 
 
 jika [[...nama]].tsx maka slug nya opsional 
+
+
+
+jika ingin mengunakan sass kita install dulu 
+- npm i --save-dev sass
+- jika ingin global buat file di styles contoh colors.scss
+- lalu di login.module.scss nya ubah yang tadinya css jadi scss
+
+
+
+jika ingin menggunakan tailwind css 
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+
+terjadi error 
+PS D:\belajar\NextJS\hari2\appsday2> npx tailwindcss init -p
+>>
+npm error could not determine executable to run
+npm error A complete log of this run can be found in: C:\Users\Acer\AppData\Local\npm-cache\_logs\2025-12-11T03_22_16_944Z-debug-0.log 
+
+karena versi Tailwind CSS versi 4.1.17 tidak memiliki executable tailwindcss yang bisa dijalankan oleh npx
+→ sehingga npx bingung: “could not determine executable to run”
+
+Solusi 1 — Install Tailwind v3 (cara paling mudah)
+
+Tailwind v3 adalah versi paling stabil & masih pakai npx tailwindcss init -p
+
+Jalankan:
+
+npm uninstall tailwindcss
+npm install -D tailwindcss@3 postcss autoprefixer
+
+
+Lalu:
+
+npx tailwindcss init -p
